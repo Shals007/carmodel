@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tesla</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seconds">1.9 S</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">200 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="range">396 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class="line">
+
+            </div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+        
+    </div>
+    <main>
+        <div class="About">
+            <h1>About us</h1>
+            <p>Tesla is an American electric vehicle (EV) and clean energy company founded by Elon Musk in 2003. The company is known for its groundbreaking electric cars, including the Model S, Model 3, Model X, and Model Y. Tesla has been at the forefront of the EV revolution and is considered a pioneer in the industry.
+
+                Tesla's mission is to accelerate the world's transition to sustainable energy. In addition to its electric cars, the company produces solar energy products, such as solar panels and energy storage solutions like the Powerwall and Powerpack. These products aim to reduce our dependence on fossil fuels and promote sustainable energy practices.
+                
+                Tesla is also known for its Autopilot feature, a driver-assist system that offers semi-autonomous driving capabilities.</p>
+        </div>
+    </main>
+    <div class="footer">
+        <p>@2023 tesla.com All rights reserved
+            contact us : www.tesla.com
+        </p>
+    </div>
+    <script>
+
+        var header = document.getElementById("header");
+        var ms = document.getElementById("models");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        var model = document.getElementById("model");
+        var seconds = document.getElementById("seconds");
+        var speed = document.getElementById("speed");
+        var range = document.getElementById("range");
+        
+
+        ms.onclick = function(){
+            header.style.backgroundImage = "url(image-1.jpg)";
+            model.innerHTML = "Model S";
+            seconds.innerHTML = "1.9 S";
+            speed.innerHTML = "200 mph";
+            range.innerHTML = "396 mi";
+        }
+        m3.onclick = function(){
+            header.style.backgroundImage = "url(image-2.png)";
+            model.innerHTML = "Model 3";
+            seconds.innerHTML = "2.5 S";
+            speed.innerHTML = "220 mph";
+            range.innerHTML = "400 mi";
+        }
+        mx.onclick = function(){
+            header.style.backgroundImage = "url(image-3.png)";
+            model.innerHTML = "Model X";
+            seconds.innerHTML = "1.8 S";
+            speed.innerHTML = "224 mph";
+            range.innerHTML = "410 mi";
+        }
+        my.onclick = function(){
+            header.style.backgroundImage = "url(image-4.png)";
+            model.innerHTML = "Model Y";
+            seconds.innerHTML = "2.8 S";
+            speed.innerHTML = "224 mph";
+            range.innerHTML = "450 mi";
+        }
+        
+
+
+
+    </script>
+
+  
+
+  
+</body>
+</html>
